@@ -1,5 +1,6 @@
 :root{
     --primary-color: #0A1128;
+    --secondary-color: crimson;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
     --gap: 3rem;
@@ -67,7 +68,7 @@ a{
 }
 
 .main-content{
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
   padding: var(--gap);
 }
@@ -77,13 +78,12 @@ a{
 }
 
 .menu{
-    background: var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 1px solid var(--light-gray-color);
+    border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
 .menu-content{
@@ -109,7 +109,7 @@ a{
 
 .menu ul li a{
    display: block;
-   padding: 20px;
+   padding: 2rem;
    font-size: 1.8rem;
    position: relative;
 }
@@ -120,8 +120,8 @@ a{
    bottom: 1rem;
    left: 50%;
    height: 0.2rem;
-   width: 0;
-   background: crimson;
+   width: 0px;
+   background: var(--secondary-color);
    transition: all 300ms ease-in-out;
 }
 
