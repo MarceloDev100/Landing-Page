@@ -14,6 +14,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 
@@ -34,7 +35,10 @@ h1{
 }
 
 h2{
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3{
@@ -57,6 +61,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin-bottom: 3rem;
+}
+
 .main-bg{
     background-image: url('../img/main-bg.svg');
     background-size: cover;
@@ -66,6 +74,7 @@ a{
 
 .white-bg{
     background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content{
@@ -152,15 +161,17 @@ a{
     justify-content: center;
 }
 
-.intro-text-content h2{
-    font-size: 6rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
 .intro-img img{
     max-width: 100%;
     height: auto;
+}
+
+.top3-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    max-width: 64rem;
+    text-align: center;
 }
 
